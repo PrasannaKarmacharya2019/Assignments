@@ -1,0 +1,26 @@
+table {
+  font-family: arial, sans-serif;
+   border-collapse: collapse; 
+  width: 40%;
+}
+
+td, th {
+  border: 1px solid #332d2d;
+  text-align: left;
+  padding: 8px;
+  
+}
+
+.head
+{
+  background-color: aquamarine;
+}
+
+#first
+{
+  background-color: blueviolet;
+}
+#second 
+{
+  background-color: burlywood;
+}

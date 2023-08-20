@@ -1,0 +1,85 @@
+body 
+{
+background-color: black;
+color:rgb(255, 255, 255);
+}
+
+form
+{
+align-self: center;
+}
+#Lname
+{
+margin-left: 15px;
+height :20px;
+}
+
+#Fname
+{
+
+height :20px;
+}
+
+h1
+{
+border-bottom:  2px solid cornsilk;
+text-align: center;
+}
+
+#address1
+{
+width:400px;
+height :20px;
+
+
+}
+#address2
+{
+margin-top: 6px;;
+  width:400px;
+  margin-bottom: 6px;
+  height :20px;
+}
+#town
+{
+margin-top: 6px;
+margin-bottom: 12px;
+}
+#town
+{
+  height :20px;
+  
+}
+#street
+{
+  height :20px;
+}
+#City
+{
+  height :20px;
+}
+.sub-button:hover
+{
+  background-color: blue;
+  color: white;
+  
+}
+.sub-button:active
+{
+  opacity: 0.6;
+}
+.sub-button
+{background-color: rgb(245, 115, 115);
+  color: blue;
+  border-color:rgb(43, 19, 184);
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
+transition: background-color 1s,color 1s;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 9px;
+padding-bottom: 9px;
+margin-left: 90px;
+}

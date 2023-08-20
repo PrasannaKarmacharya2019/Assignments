@@ -24,3 +24,13 @@ td, th {
 {
   background-color: burlywood;
 }
+
+tr:nth-child(even)
+{
+  background-color: blueviolet;
+}
+
+tr:nth-child(even):hover
+{
+  background-color: rgb(2, 58, 0);
+}

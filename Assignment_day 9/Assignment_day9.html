@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Designer's Portfolio</title>
+</head>
+<style>
+body
+{
+    margin:0;
+    padding:0;
+    background-color: rgb(185, 185, 185);
+    
+}
+.navbar
+{
+    height: 65px;
+    padding: 10px;
+    background-color:black;
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;   
+    margin-bottom: 7px;
+
+}
+h1
+{
+    color:aliceblue;
+}
+.content
+{
+margin-right:10px;
+position: relative;
+  }
+.navbar .content a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 4px;
+  }
+  .content form input
+  {
+    margin-bottom: 10px;
+    margin-left: 4px;
+    border-radius: 20px;
+    height: 50px;
+    padding: 3px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+.services_drop
+{
+position: relative;
+display: inline-block;
+}
+.services_button
+{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    border: none;
+}
+.services_content
+{
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.services_content a
+{
+    background-color: black;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+.services_content a:hover
+{
+    background-color:rgb(16, 0, 117);
+}
+.services_drop:hover .services_content
+{
+    display: block;
+}
+.services_button:hover
+{
+    color: rgb(124, 124, 124);
+ }
+input
+{
+    height: 40px;
+    padding:5px;
+  border-radius: 9px;
+ 
+}
+.staff
+{
+box-shadow:-10px -10px  7px rgb(252, 214, 214);
+background-color: rgb(134, 134, 134);
+margin-left: 5px;
+padding-left: 5px;
+padding-top: 2px;
+
+}
+.staff .worker1,.staff .worker2
+{
+   display: inline-block;
+   width:40%;
+ 
+justify-content: center;
+
+}
+img
+{
+border-radius: 100px;
+height: 300px;
+
+}
+.worker1 h4,.worker1 p
+{
+margin-left: 60px;
+}
+.worker2 h4,.worker2 p
+{
+    margin-left: 70px;
+}
+.box
+{
+    margin: 9px;
+    border:1px solid yellow;
+    padding-left:20px;
+}
+</style>
+<body>
+<div class="navbar">
+<h1>Designer's Portfolio</h1>
+<div class="content">
+    <a href="#home">Home</a>
+    <a href="#Portfolio">Portfolio</a>
+    <div class="services_drop">
+    <button class="services_button">Services <i class="fa-solid fa-caret-down"></i></button>
+    <div class="services_content">
+        <a href="">Web Design</a>
+        <a href="">Graphic Design</a>
+        <a href="">UI\UX Design</a>
+    </div>
+</div>
+<a href="#contact">Contact</a>
+<input type="search" placeholder="Search...">
+</div>
+</div>
+
+
+<div class="staff">
+<h2>About Us</h2>
+<p>Welcome to our world of Excellence. With about two decades of experience,our passion for creativity drives us to deliver stunning solutions tailored to your needs.</p>
+<h3>Our team</h3>
+<div class="worker1">
+    <img  src="data:image/jpeg;base64,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">
+    <h4>Taylor Swift</h4>
+    <p>Lead Designer</p>
+</div>
+<div class="worker2">
+    <img src="https://media1.popsugar-assets.com/files/thumbor/hnVKqXE-xPM5bi3w8RQLqFCDw_E/475x60:1974x1559/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/023/n/1922398/9f849ffa5d76e13d154137.01128738_/i/Taylor-Swift.jpg" >
+    <h4>Taylor Alison Swift</h4>
+    <p> Co-Leader/Co-Designer</p>
+</div>
+</div>
+
+<h2 style="margin-left: 11px;">Frequently Asked question</h2>
+<div class="box">
+    <h4>What services do you offer?</h4>
+    <p>We offer wide range of design services including web design, graphic design, and UI/UX design.</p>
+    </div>
+    <br>
+<div class="box">
+ <h4>How do I get started?</h4>
+ <p>Getting sstarted is easy. Just simply reach out to us through our page ad we'll be in touch to discuss our project.</p>
+</div>
+<br>
+<div class="box">
+    <h4>How do I get started?</h4>
+    <p>Getting sstarted is easy. Just simply reach out to us through our page ad we'll be in touch to discuss our project.</p>
+   </div>
+   <br><div class="box">
+    <h4>How do I get started?</h4>
+    <p>Getting sstarted is easy. Just simply reach out to us through our page ad we'll be in touch to discuss our project.</p>
+   </div>
+   <br><div class="box">
+    <h4>How do I get started?</h4>
+    <p>Getting sstarted is easy. Just simply reach out to us through our page ad we'll be in touch to discuss our project.</p>
+   </div>
+   <br><div class="box">
+    <h4>How do I get started?</h4>
+    <p>Getting sstarted is easy. Just simply reach out to us through our page ad we'll be in touch to discuss our project.</p>
+   </div>
+   <br><div class="box">
+    <h4>How do I get started?</h4>
+    <p>Getting sstarted is easy. Just simply reach out to us through our page ad we'll be in touch to discuss our project.</p>
+   </div>
+   <br><div class="box">
+    <h4>How do I get started?</h4>
+    <p>Getting sstarted is easy. Just simply reach out to us through our page ad we'll be in touch to discuss our project.</p>
+   </div>
+   <br>
+</body>
+</html>

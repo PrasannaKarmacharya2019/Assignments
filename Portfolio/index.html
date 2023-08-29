@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>MY PORTFOLIO</title>
+  </head>
+  <body>
+<div class="Pro">
+    <nav class="desktop-nav">
+      <div class="logo">
+        <img src="./assets/erprasanna-logo.png" width="200px">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Profile Section Start -->
+    <section class="profile">
+      <div class="section__pic-container">
+        <img style="width: 400px; height:350px; border-radius: 50px;" src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/348555781_213894514769904_8656603561324275890_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=bqW0k6YKvGQAX-j7-sG&_nc_ht=scontent.fbwa1-1.fna&oh=00_AfB4o-1V4JGBGMQFDo-84X10FaVZRTuKPHehqzTqJJvY_Q&oe=64F1AB86">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Prasanna Karmacharya</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- <a class="btn btn-color-1" href="./assets/dummy.pdf" target="_blank">
+            Download CV</a
+          > -->
+          <button class="btn btn-color-2">Contact me</button>
+        </div>
+
+        <div class="social-container">
+          <button style="border: none" onclick="openLinkedInProfile()">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png"
+              alt="My Linkedin Profile"
+              class="icon"
+            />
+          </button>
+          <button style="border: none" onclick="openGithubProfile()">
+            <img
+              src="./assets/GitHub-logo.png"
+              alt="My Github Profile"
+              class="icon"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+</div>
+  
+    <section id="about">
+      <p class="section__text__p1"><strong>Get to know me more</strong></p>
+     <br/>
+      <h2 style="text-align: center; font-size: 3rem;">About me:</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+          style="object-fit: cover; border-radius: 70px;"
+            src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/328746342_939858260589988_8115924008987617651_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=KWbGqGMJF30AX8inhq6&_nc_ht=scontent.fbwa1-1.fna&oh=00_AfDZFpF5nBE5-znhElfZlMUeArkKhROiXPq-7g2pnkn4tg&oe=64F1AF51"
+            alt="Profile Picture"
+            class="about-pic"   />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/pngwing.com.png" alt="Experience icon" />
+              <h3>Experience</h3>
+              <p>
+               +1 year<br />
+                <strong>Frontend Developer</strong>
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="assets/educ.png"
+                alt="Education"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachlor's Degree in Engineeeing<br />
+                <strong>Advanced Engineeing College, Lalitpur</strong>
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <ul>
+             <li>	Programming knowledge of languages like C & C++ using Turbo C++ and DEV C++</li>
+             <li>Training on Cisco packet tracer and Computer network</li>
+              <li>	Participation on basic CCNA Session </li>
+                <li>Good knowledge of HTML and CSS</li>
+                                  
+                          <li>Good knowledge of HTML and CSS(Cascading style Sheet)</li>
+                            <li>Computer graphics projects project using Turbo C++</li>
+                              <li>Basic Knowledge of SQL and database</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  
+    <section id="experience">
+      <!-- <p class="section__text__p1">Explore my</p> -->
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://t4.ftcdn.net/jpg/01/22/72/75/360_F_122727585_W1Cz5POyf45HoebT10fUpuUXZKHa3M7P.jpg"
+                  alt="Checkmark"
+                  class="icon"
+                />
+                <h2>HTML</h2>
+                <p>Experienced</p>
+              </article>
+              <article>
+                <img
+                  src="https://t4.ftcdn.net/jpg/01/22/72/75/360_F_122727585_W1Cz5POyf45HoebT10fUpuUXZKHa3M7P.jpg"
+                  alt="Checkmark"
+                  class="icon"
+                />
+                <h2>CSS</h2>
+                <p>Experienced</p>
+              </article>
+              <article>
+                <img
+                  src="https://t4.ftcdn.net/jpg/01/22/72/75/360_F_122727585_W1Cz5POyf45HoebT10fUpuUXZKHa3M7P.jpg"
+                  alt="Checkmark"
+                  class="icon"
+                />
+                <h2>SASS</h2>
+                <p>Experienced</p>
+              </article>
+              <article>
+                <img
+                  src="https://t4.ftcdn.net/jpg/01/22/72/75/360_F_122727585_W1Cz5POyf45HoebT10fUpuUXZKHa3M7P.jpg"
+                  alt="Checkmark"
+                  class="icon"
+                />
+                <h2>Javascript</h2>
+                <p>Experienced</p>
+              </article>
+              <article>
+                <img
+                  src="https://t4.ftcdn.net/jpg/01/22/72/75/360_F_122727585_W1Cz5POyf45HoebT10fUpuUXZKHa3M7P.jpg"
+                  alt="Checkmark"
+                  class="icon"
+                />
+                <h2>React</h2>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img
+                  src="https://t4.ftcdn.net/jpg/01/22/72/75/360_F_122727585_W1Cz5POyf45HoebT10fUpuUXZKHa3M7P.jpg"
+                  alt="Checkmark"
+                  class="icon"
+                />
+                <h2>Typescript</h2>
+                <p>Basic</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section End -->
+
+    <!-- Project Section Start -->
+    <section id="projects">
+      <p class="section__text__p1">Browse my projects:</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="projects-container">
+              <img
+              style="margin-top: 20px;"
+                src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2018/07/01153710/benefits-of-working-from-home-1024x512.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="openGithubProject()"
+              >
+                Github
+              </button>
+              <button class="btn btn-color-1 project-btn">Live Demo</button>
+            </div>
+            <div class="projects-container">
+              <img
+                              src="https://ifs.org.uk/sites/default/files/styles/full_height_banner/public/2023-05/woman-working-at-dining-table_0.jpg?itok=-dWSAbHY"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <button class="btn btn-color-1 project-btn">Github</button>
+              <button class="btn btn-color-1 project-btn">Live Demo</button>
+            </div>
+            <div class="projects-container">
+              <img
+                src="https://apicms.thestar.com.my/uploads/images/2021/02/24/1055397.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <button class="btn btn-color-1 project-btn">Github</button>
+              <button class="btn btn-color-1 project-btn">Live Demo</button>
+            </div>
+            <div class="projects-container">
+              <img
+                src="https://www.munich-business-school.de/insights/wp-content/uploads/2022/12/Werkstudent_Blog-678x381.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <button class="btn btn-color-1 project-btn">Github</button>
+              <button class="btn btn-color-1 project-btn">Live Demo</button>
+            </div>
+            <div class="projects-container">
+              <img
+                src="https://www.uagrantham.edu/wp-content/uploads/2020/11/What-Are-the-Differences-Between-Electric-and-Electronics-Engineering.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <button class="btn btn-color-1 project-btn">Github</button>
+              <button class="btn btn-color-1 project-btn">Live Demo</button>
+            </div>
+            <div class="projects-container" style="margin-bottom: 20px;">
+              <img
+                src="https://www.tompkinscortland.edu/sites/default/files/styles/max_1300x1300/public/images/electrical-engineering-technology.png?itok=fAsCIdXz"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <button class="btn btn-color-1 project-btn">Github</button>
+              <button class="btn btn-color-1 project-btn" >Live Demo</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section End -->
+
+    <section id="contact">
+      <form>
+        <h1>Contact me</h1>
+        <h3>Phone Number:9803253360     </h3>
+        <h3>Email:prasannamank@gmail.com</h3>
+        <h3>Or simply fill the form below so I can contact you:</h3>
+          <h2> Name</h2>
+        <input 
+       
+        type="text" 
+        id="Fname" 
+        placeholder="Enter your First name" 
+        >
+        
+        <label for="text"></label> 
+        <input 
+        type="text" 
+        id="Lname" 
+        placeholder="Enter your last name">
+        <br>
+        
+        <h2>  Address</h2>
+        <input 
+        
+        type="text" 
+        id="address1" 
+        placeholder="Enter your permanent Address " 
+        >
+        <br />
+        
+        <input 
+        
+        type="text" 
+        id="address2" 
+        placeholder="Enter your temporary Address " 
+        >
+        <br />
+        
+        <input 
+        type="text" 
+        id="City" 
+        placeholder="Enter your temporary City" 
+        >
+        <input 
+        type="text" 
+        id="street" 
+        placeholder="Enter your temporary street" 
+        >
+        <br />
+        <input 
+        type="text" 
+        id="town" 
+        placeholder="Enter your temporary town" 
+        >
+        <br />
+        <select name="">
+          <option value="">Select a Region to continue</option>
+          <option value="Bagmati">Bagmati</option>
+          <option value="Gandaki">Gandaki</option>
+          <option value="Janakpur">Janakpur</option>
+          <label>Choose any option</label>
+        </select>
+        
+        <h2>Contact</h2>
+        
+        <input 
+        type="text" 
+        id="street" 
+        placeholder="Enter your Phone Number" 
+        >
+        <input 
+        type="text" 
+        id="street" 
+        placeholder="Enter your Mobile Number" 
+        >
+        
+        <h2>Personal Detail</h2>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="Female">Female</label>
+        <br />
+        <input type="radio" id="Others" name="gender" value="Others">
+        <label for="Others">Others</label>
+        <h2>Ratings</h2>
+        
+        <label>Rating 1</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Good</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="Female">Bad</label>
+        <input type="radio" id="Others" name="gender" value="Others">
+        <label for="Others">Excellent</label>
+        <br />
+        
+        <label>Rating 2</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Good</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="Female">Bad</label>
+        <input type="radio" id="Others" name="gender" value="Others">
+        <label for="Others">Excellent</label>
+        <br />
+        
+        <label>Rating 3</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Good</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="Female">Bad</label>
+        <input type="radio" id="Others" name="gender" value="Others">
+        <label for="Others">Excellent</label>
+        <br />
+        
+        <button class="sub-button">Submit</button>
+
+
+      </section>
+
+    <script>
+      function openLinkedInProfile() {
+        window.location.href = "https://www.linkedin.com/in/prasanna-karmacharya-29432b278";
+      }
+      function openGithubProfile() {
+        window.location.href = "https://github.com/PrasannaKarmacharya2019";
+      }
+      function openGithubProject() {
+        window.location.href = "https://github.com/PrasannaKarmacharya2019";
+      }
+    </script>
+   
+
+
+   
+
+  </body>
+</html>

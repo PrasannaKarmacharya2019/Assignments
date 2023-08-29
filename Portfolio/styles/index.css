@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tilt+Prism&display=swap");
+
+html {
+  /* It is 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(159, 250, 220);
+  
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+a,
+.btn {
+  transition: all ease 300ms;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  position: sticky;
+  top: 0;
+  background-color: rgb(180, 3, 71);
+  z-index: 1;
+}
+
+.nav-links {
+  gap: 3.2rem;
+  list-style: none;
+  font-size: 2.4rem;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color:rgb(24, 236, 24);
+  text-decoration: underline;
+  text-decoration-color: rgb(69, 240, 2);
+  text-underline-offset: 1.5rem;
+}
+
+.logo {
+  font-size: 3.2rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* Hamburger Menu */
+.hamburger-nav {
+  display: none;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 25rem;
+  height: 80vh;
+   object-fit: contain;
+}
+
+.profile .section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.profile .section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.profile .section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section__text__p2 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 1.7rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: cemter;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 3.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.btn {
+  font-weight: 600;
+  padding: 1.6rem;
+  width: 15rem;
+  border-radius: 3.2rem;
+  box-shadow: 5px 5px 5px black;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border:none;
+
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(54, 165, 27);
+  color: white;
+ 
+}
+
+/* About Section */
+
+#about {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  gap: 10rem;
+  height: 100vh;
+  align-items: center;
+}
+
+.section__pic-container img {
+  height: 400px;
+  width: 400px;
+}
+
+#about .section__text__p1 
+{
+  position: relative;
+  margin-top: 80px;
+  left: 0%;
+}
+#about .title {
+  position: absolute;
+  top: 15%;
+  left: 51%;
+}
+
+.about-containers {
+  display: flex;
+  gap: 5.5rem;
+}
+
+.details-container h3 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.details-container p {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.details-container img {
+  height: 6rem;
+}
+
+.text-container ul li {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Experience Section */
+
+#experience {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 8rem;
+  flex-wrap: wrap;
+}
+
+article {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: flex;
+  width: 16rem;
+  justify-content: space-around;
+  gap: 1.5rem; */
+}
+
+#experience .experience-sub-title,
+#experience .title {
+  text-align: center;
+}
+
+#experience .experience-sub-title {
+  margin-left: 1rem;
+}
+
+/* Project section  */
+#projects {
+  /* position: relative; */
+
+  width: 70%;
+  margin: 7rem auto;
+}
+
+#projects .title {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.color-container {
+  border-color: rgb(181, 181, 181);
+  background: rgb(250, 250, 250);
+}
+
+#projects .projects-container {
+  height: 400px;
+  width: 500px;
+  /* dis */
+}
+#projects .color-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.projects-container .project-img {
+  width: 100%;
+  height: 70%;
+}
+
+.project-title {
+  margin: 1.6rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+.Pro
+{
+background-color: rgba(250, 67, 67, 0.685);
+border:solid 2px black;
+box-shadow: 10px 10px 10px black;
+}
+form
+{
+align-self: center;
+}
+#Lname
+{
+margin-left: 15px;
+height :20px;
+}
+
+#Fname
+{
+
+height :20px;
+}
+
+h1
+{
+border-bottom:  2px solid cornsilk;
+text-align: center;
+}
+
+#address1
+{
+width:400px;
+height :20px;
+
+
+}
+#address2
+{
+margin-top: 6px;;
+  width:400px;
+  margin-bottom: 6px;
+  height :20px;
+}
+#town
+{
+margin-top: 6px;
+margin-bottom: 12px;
+}
+#town
+{
+  height :20px;
+  
+}
+#street
+{
+  height :20px;
+}
+#City
+{
+  height :20px;
+}
+.sub-button:hover
+{
+  background-color: blue;
+  color: white;
+  
+}
+.sub-button:active
+{
+  opacity: 0.6;
+}
+.sub-button
+{background-color: rgb(245, 115, 115);
+  color: blue;
+  border-color:rgb(43, 19, 184);
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
+transition: background-color 1s,color 1s;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 9px;
+padding-bottom: 9px;
+margin-left: 90px;
+}
+#contact
+{
+border:1px solid rgb(61, 226, 248);
+margin:20px;
+background-color: rgb(105, 184, 157);
+padding:20px;
+}

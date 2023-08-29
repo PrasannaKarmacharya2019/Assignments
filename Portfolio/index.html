@@ -273,121 +273,51 @@
 
     <section id="contact">
       <form>
-        <h1>Contact me</h1>
-        <h3>Phone Number:9803253360     </h3>
-        <h3>Email:prasannamank@gmail.com</h3>
-        <h3>Or simply fill the form below so I can contact you:</h3>
-          <h2> Name</h2>
-        <input 
-       
-        type="text" 
-        id="Fname" 
-        placeholder="Enter your First name" 
-        >
+        <div class="bgcolor">
+          <p style="font-size:xx-large;">Contact Me</p>
+          <div class="information1" >  
+          <div id="name">
+            <label for="Name" >Name</label> 
+            <input type="text" placeholder="Your name" style="width: 500px; height: 30px;">
+            </div>
         
-        <label for="text"></label> 
-        <input 
-        type="text" 
-        id="Lname" 
-        placeholder="Enter your last name">
-        <br>
+            <div id="Email">
+              <label for="Email">E-mail</label>
+              <input type="email" placeholder="Your Email" style="width: 400px; height: 30px;">
+            </div>
         
-        <h2>  Address</h2>
-        <input 
+            
         
-        type="text" 
-        id="address1" 
-        placeholder="Enter your permanent Address " 
-        >
-        <br />
+            <div id="Phone">
+              <label for="Phone">Phone</label>
+              <input type="number" placeholder="Your Phone" style="width: 400px; height: 30px;">
+            </div>
         
-        <input 
+            <div id="Subject">
+              <label for="Subject">Subject</label>
+              <input type="text" placeholder="Your Subject" style="width: 400px; height: 30px;">
+              <br/><br/>
+            </div>
         
-        type="text" 
-        id="address2" 
-        placeholder="Enter your temporary Address " 
-        >
-        <br />
-        
-        <input 
-        type="text" 
-        id="City" 
-        placeholder="Enter your temporary City" 
-        >
-        <input 
-        type="text" 
-        id="street" 
-        placeholder="Enter your temporary street" 
-        >
-        <br />
-        <input 
-        type="text" 
-        id="town" 
-        placeholder="Enter your temporary town" 
-        >
-        <br />
-        <select name="">
-          <option value="">Select a Region to continue</option>
-          <option value="Bagmati">Bagmati</option>
-          <option value="Gandaki">Gandaki</option>
-          <option value="Janakpur">Janakpur</option>
-          <label>Choose any option</label>
-        </select>
-        
-        <h2>Contact</h2>
-        
-        <input 
-        type="text" 
-        id="street" 
-        placeholder="Enter your Phone Number" 
-        >
-        <input 
-        type="text" 
-        id="street" 
-        placeholder="Enter your Mobile Number" 
-        >
-        
-        <h2>Personal Detail</h2>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label>
-        <br />
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="Female">Female</label>
-        <br />
-        <input type="radio" id="Others" name="gender" value="Others">
-        <label for="Others">Others</label>
-        <h2>Ratings</h2>
-        
-        <label>Rating 1</label>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Good</label>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="Female">Bad</label>
-        <input type="radio" id="Others" name="gender" value="Others">
-        <label for="Others">Excellent</label>
-        <br />
-        
-        <label>Rating 2</label>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Good</label>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="Female">Bad</label>
-        <input type="radio" id="Others" name="gender" value="Others">
-        <label for="Others">Excellent</label>
-        <br />
-        
-        <label>Rating 3</label>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Good</label>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="Female">Bad</label>
-        <input type="radio" id="Others" name="gender" value="Others">
-        <label for="Others">Excellent</label>
-        <br />
-        
-        <button class="sub-button">Submit</button>
+          
+        <div id="gender">
+        <label for="gender" >Gender</label>
+            <select name="" style="height: 30px;">
+              <option value="">Select a Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+              <label>Choose any option</label>
+            </select>
+            <div id="Message">
+              <label for="Message>">Message</label>
+              <input type="text" placeholder="Your Message..." style="width: 400px; height: 70px;">
+            </div>
+</div>
+</div>
+</div>
 
-
+</form>
       </section>
 
     <script>

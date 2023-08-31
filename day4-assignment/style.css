@@ -30,3 +30,13 @@ tr:nth-child(even):hover
 {
   background-color: rgb(2, 58, 0);
 }
+.submit-button {
+ background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}

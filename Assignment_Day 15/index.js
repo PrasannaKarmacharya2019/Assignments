@@ -30,12 +30,12 @@ function prime()
   else{
     document.write("The Given Number ", no, " is not Prime");
   }      
-      
-
-
-
 }      
 
+function Sum()
+{
+  document.write(" AND Sum of series is ", (no * (no + 1)) / 2);
+}
 
 if (no===1)
   {
@@ -45,6 +45,7 @@ else if(no>1)
 {
  prime();
  OddOrEven();
+ Sum();
 }
 else
 {

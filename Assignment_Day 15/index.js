@@ -1,10 +1,10 @@
 let num = prompt('Enter a number');
 const no=Number(num);
 
-
 function OddOrEven()
 {
 let rem=no%2;
+
 if (rem===0)
 {
   document.write(' and it is an even number');
@@ -19,16 +19,22 @@ else
 
 function prime()
 {
-  let i = 2; 
-   if (no % i == 0 && i<no)
-     { i++;
-      document.write(no,' is not prime');
-    }
-    else
-    {
-      document.write(no,' is a prime');
-    }
-}
+  for(i = 2; i < no; i++)
+  {
+    if(no % i === 0)
+           break;
+     }
+     if(no === i){
+      document.write("The Given Number ", no, " is Prime");
+  }
+  else{
+    document.write("The Given Number ", no, " is not Prime");
+  }      
+      
+
+
+
+}      
 
 
 if (no===1)

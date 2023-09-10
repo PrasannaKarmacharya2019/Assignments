@@ -19,7 +19,7 @@ else
 
 function prime()
 {
-  for(i = 2; i < no; i++)
+  for(i = 2; i <= no; i++)
   {
     if(no % i === 0)
            break;

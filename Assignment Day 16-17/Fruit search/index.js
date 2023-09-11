@@ -1,23 +1,23 @@
-const fruits = ['apple', 'banana', 'cherry', 'orange'];
-const fruit= prompt("Enter a fruit")
-for(i=0;i<fruit.length;i++)
+function fsearch(fruit, fruits)
 {
-  if(fruits[i]==fruit)
+  for (let i = 0; i < fruit.length; i++) 
   {
-   found();
-   break;
+    if (fruit[i] === fruits) 
+    {
+      return 1;
       }
-      else 
-      {
-       notfound();
-       break;
-      }
+  }
+  return 0;
+
 }
-function found()
+const fruit = ["apple", "banana", "cherry", "orange"];
+const fruits= prompt("Enter a fruit");
+result= fsearch(fruit, fruits);
+if(result==1)
 {
-  document.write(fruit+" found in arrray");
+  document.write(fruits+" found in arrray");
 }
-function notfound()
+else
 {
-  document.write(fruit+" not found in arrray");
+  document.write(fruits+" not found in arrray");
 }

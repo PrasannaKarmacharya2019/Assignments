@@ -1,0 +1,9 @@
+1) Call a api using fetch method: https://dummyjson.com/products
+	
+2) Use promise to return value of products from that api call
+	
+3) Filter the products by smartphones
+
+4) const data = [ { id: 1, name: 'John' }, { id: 2, name: 'Jane' }, { id: 1, name: 'John' }, // Duplicate { id: 3, name: 'Bob' }, { id: 4, name: 'Alice' }, ];
+
+find unique data from an array of objects

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word count</title>
+  </head>
+  <body>
+    <script>
+      const wordCount =
+        "This is a simple example. This is just an example of word frequency.";
+
+      const charCount = wordCount.split(/\W+/);
+      console.log(charCount);
+      let charFreq = {};
+      for (let char of charCount) {
+        if (char != "")
+          if (charFreq[char]) {
+            charFreq[char]++;
+          } else {
+            charFreq[char] = 1;
+          }
+      }
+      console.log(charFreq);
+    </script>
+  </body>
+</html>

@@ -47,7 +47,7 @@ card.append(cardHead)
 
 // card-Body
 const cardBody=document.createElement('div')
-main.className="card-body"
+cardBody.className="card-body"
 cardBody.style.textAlign='center'
 
 

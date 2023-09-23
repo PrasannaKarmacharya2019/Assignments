@@ -133,14 +133,20 @@ const dis=array.filter((item)=>{
 // Return object of name and address using map method 
 console.log("Return object of name and address using map method");
 const mapmethod=array.map((item)=>{
-    { 
+   
     
       return {
         Name: item.productName,
         address: item.address.city,
-      };
-  
-
-   }
+      }; 
   });
   console.log(mapmethod);
+  
+  //delete
+  const deleteProduct=(abcd)=>{
+    const filteredProducts=array.filter(function(item){
+      return item.id!==abcd;
+    })
+    console.log('filteredProducts',filteredProducts)
+      }
+      deleteProduct(1);

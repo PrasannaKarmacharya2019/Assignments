@@ -25,6 +25,7 @@ h1 {
 
 .input-group {
   margin-bottom: 20px;
+
 }
 
 label {
@@ -33,9 +34,10 @@ label {
   margin-bottom: 5px;
 }
 
-#username,
-#email,
-#password {
+#fullName,
+#signup-email,
+#DOB,
+#signup-password {
   width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -54,4 +56,8 @@ label {
 
 .signup-button:hover {
   background-color: #0056b3;
+}
+
+.text-danger{
+  color: red;
 }

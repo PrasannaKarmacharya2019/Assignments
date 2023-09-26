@@ -14,7 +14,7 @@
           <label for="username">Username</label>
           <input
             type="text"
-            id="username"
+            id="fullName"
             name="username"
             placeholder="Enter your Name"
           />
@@ -23,7 +23,7 @@
           <label for="email">Email</label>
           <input
             type="email"
-            id="email"
+            id="signup-email"
             name="email"
             placeholder="Enter your Email"
           />
@@ -32,7 +32,7 @@
           <label for="password">Password</label>
           <input
             type="password"
-            id="password"
+            id="signup-password"
             name="password"
             placeholder="Enter your Password"
           />
@@ -41,13 +41,17 @@
           <label for="password">Date of Birth</label>
           <input
             type="date"
-            id="password"
+            id="DOB"
             name="date"
             placeholder="Enter your Date of Birth"
           />
         </div>
-        <button type="submit" class="signup-button">Sign Up</button>
+        <button onclick="sighupHandler(event)" class="signup-button">
+          Sign Up
+        </button>
+        <span class="text-danger" id="error-msg"> </span>
       </form>
     </div>
+    <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>

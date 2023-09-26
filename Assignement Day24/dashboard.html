@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DASHBOARD</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color:aquamarine">Welcome to our shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+
+                <li><hr class="dropdown-divider" />hi</li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >About</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              
+            <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active"  style="color:blue" aria-current="page" href="./login.html">Signout</a>
+            </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="container"></div>
+    <script>
+      const container = document.getElementById("container");
+      container.className =
+        "container d-flex flex-wrap justify-content-between gap-5";
+
+      const fetchProducts = async () => {
+        const resp = await fetch("https://dummyjson.com/products");
+        const { products } = await resp.json();
+
+        for (let product of products) {
+          const card = document.createElement("div");
+          card.style.width = "30%";
+          card.style.height = "500px";
+          card.className = "card d-flex";
+
+          const cardHeader = document.createElement("div");
+          cardHeader.className = "card-header h-50";
+
+          const image = document.createElement("img");
+          image.src = product.thumbnail;
+          // image.classList = "h-100";
+          image.className = 'h-100 w-100';
+          card.append(cardHeader);
+          cardHeader.append(image);
+
+
+          // card-Body
+          const cardBody = document.createElement("div");
+          cardBody.className = "card-body";
+          cardBody.style.textAlign = "center";
+
+          const h4 = document.createElement("h4");
+          h4.className = "text-center";
+          h4.innerText = product.brand;
+          card.append(h4);
+
+          const par = document.createElement("p");
+          par.innerText = product.category;
+          par.className = "text-secondary text-center";
+          cardBody.append(par);
+
+          const butt1 = document.createElement("button");
+          butt1.innerHTML = 'Buy Now <i class="fa-solid fa-store"></i>';
+          butt1.className = "btn btn-outline-success me-3";
+          cardBody.append(butt1);
+
+          const butt2 = document.createElement("button");
+          butt2.innerHTML = 'Add to cart <i class="fa-solid fa-cart-shopping"></i>';
+          butt2.className = "btn btn-warning ";
+          cardBody.append(butt2);
+
+
+          const p = document.createElement("p");
+          p.innerText = product.description;
+          p.style.textAlign = "center";
+          card.append(p);
+
+          card.append(cardBody);
+          
+          container.append(card);
+        }
+      };
+
+      fetchProducts();
+    </script>
+  </body>
+</html>
